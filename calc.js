@@ -1,22 +1,5 @@
 var calc=(function calc(a){
 
-
-    //function sum(a){
-    //    for(var i=0;i<arguments.length;i++){
-    //        a+=arguments[i];
-    //    }
-    //}
-    //function sum(a){
-    //    for(var i=0;i<arguments.length;i++){
-    //        a+=arguments[i];
-    //    }
-    //}
-    //function sum(a){
-    //    for(var i=0;i<arguments.length;i++){
-    //        a+=arguments[i];
-    //    }
-    //}
-
     return {
        sum : function sum(a){
            for(var i=1;i<arguments.length;i++){
