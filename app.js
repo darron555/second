@@ -1,7 +1,8 @@
 var calc=require("./calc");
+var cal=calc(100);
 console.time('time');
-console.log(calc.sum(1,3,2));
-console.error(calc.dif(1,3,2));
-console.error(calc.div(8,2,88));
-console.error(calc.mul(8,2,88));
+console.log(cal.sum(1, 2, 3));
+console.error(cal.dif(10, 20));
+console.error(cal.div(2,2));
+console.error(cal.mul(2,2));
 console.timeEnd('time');

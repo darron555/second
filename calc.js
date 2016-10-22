@@ -1,36 +1,39 @@
-var calc=(function calc(a){
+function calc(f){
 
     return {
-       sum : function sum(a){
-           for(var i=1;i<arguments.length;i++){
-               a+=arguments[i];
-
+       sum : function sum(){
+           var res=f;
+           for(var i=0;i<arguments.length;i++){
+               res+=arguments[i];
            }
-           return a;
+           return res;
        },
-        dif:function dif(a){
-            for(var i=1;i<arguments.length;i++){
-                a-=arguments[i];
+        dif:function dif(){
+            var res=f;
+            for(var i=0;i<arguments.length;i++){
+                res-=arguments[i];
             }
-            return a;
+            return res;
         },
-        div:function dif(a){
-            for(var i=1;i<arguments.length;i++){
+        div:function dif(){
+            var res=f;
+            for(var i=0;i<arguments.length;i++){
                 if(arguments[i]==0){
                     throw new Error("На ноль делить нельзя");
                 }
-                a/=arguments[i];
+                res/=arguments[i];
             }
-            return a;
+            return res;
         },
-        mul:function dif(a){
-            for(var i=1;i<arguments.length;i++){
-                a*=arguments[i];
+        mul:function dif(){
+            var res=f;
+            for(var i=0;i<arguments.length;i++){
+                res*=arguments[i];
             }
-            return a;
+            return res;
         }
     };
 
-}());
+}
 
 module.exports=calc;
